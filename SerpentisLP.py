@@ -229,16 +229,17 @@ marketdata = get_marketdata("https://www.fuzzwork.co.uk/lpstore/buy/10000002/100
 
 #marketdata = get_marketdata_from_file('2020-03-21_105200.xlsx')
 
-# #根据订单进行采购
-order_plan = get_order_plan('high_grade_snake.xlsx', time=3)
+# # #根据订单进行采购
+# order_plan = get_order_plan('high_grade_snake.xlsx', time=3)
+#
+# # #根据LP均价进行采购（采购所有BUY价比率高于的3000商品，数量为市场交易量的5%）
+# # avg_low_bound = 2700
+# # order_plan = marketdata[marketdata['isk/lp'] >= avg_low_bound]
+# # order_plan_swap = order_plan.copy()
+# # order_plan_swap['Qty'] = order_plan['5% Volume']
+# # order_plan = order_plan_swap
+# trade_aide(marketdata, order_plan, 2700)
 
-# #根据LP均价进行采购（采购所有BUY价比率高于的3000商品，数量为市场交易量的5%）
-# avg_low_bound = 2700
-# order_plan = marketdata[marketdata['isk/lp'] >= avg_low_bound]
-# order_plan_swap = order_plan.copy()
-# order_plan_swap['Qty'] = order_plan['5% Volume']
-# order_plan = order_plan_swap
-trade_aide(marketdata, order_plan, 2700)
 
 
 
