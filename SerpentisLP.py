@@ -66,7 +66,7 @@ def get_marketdata(url):
     lpmarket = lpmarket[lpmarket['LP'] >= low_bound]
 
     # # 设置一个阈值，该阈值是允许的LP最低均价，只采购比例高于此值的产品
-    # avg_low_bound = 2700
+    # avg_low_bound = 500
     # lpmarket = lpmarket[lpmarket['isk/lp'] >= avg_low_bound]
 
     # 以下通过分析卖单价进行排序
