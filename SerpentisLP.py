@@ -222,8 +222,8 @@ def trade_aide(marketdata, orderplan, lpprice):
             print("交易撤销")
         #打印剩余的订单计划
 
-# 天蛇
-marketdata = get_marketdata("https://www.fuzzwork.co.uk/lpstore/buy/10000002/1000135")
+# C海军
+marketdata = get_marketdata("https://www.fuzzwork.co.uk/lpstore/buy/10000002/1000035")
 # 天使
 #marketdata = get_marketdata("https://www.fuzzwork.co.uk/lpstore/sell/10000002/1000124")
 
